@@ -8,6 +8,12 @@
     },
     "type": "magento2-theme",
     "version": "100.0.1",
+    "authors": [
+        {
+            "name": "Tigren Solutions",
+            "email": "info@tigren.com"
+        }
+    ],
     "license": [
         "OSL-3.0"
     ],
