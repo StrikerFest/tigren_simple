@@ -13,5 +13,13 @@
                 <argument name="logo_width" xsi:type="number">150</argument>
             </arguments>
         </referenceBlock>
+        <referenceContainer name="footer-container">
+<!--            <container name="footer" as="footer" label="Page Footer" htmlTag="div" htmlClass="footer content">-->
+
+            <container>
+                <block after="footer_links" name="sample" template="Magento_Theme::html/message.phtml" />
+            </container>
+        </referenceContainer>
+
     </body>
 </page>
