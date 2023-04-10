@@ -4,7 +4,7 @@ define([
 function($) {
   return (config) => {
   $(document).ready(function($){
-          console.log("Hello from magen theme, this take title from phtml:",config.title);
+          console.log("Hello from magento theme, this take title from phtml:",config.title);
       });
   }
 

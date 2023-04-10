@@ -2,7 +2,7 @@
 /** @var \Magento\Framework\Escaper $escaper */
 /** @var Magento\Framework\View\Element\Template $block */
 ?>
-<div data-mage-init='{"Magento_Theme/js/hello":{"title": "<?= $block->getData('title'); ?>"}}'>
+<div data-mage-init='{"theme/hello":{"title": "<?= $block->getData('title'); ?>"}}'>
     <small class="copyright">
         <h3><?= $escaper->escapeHtml(__('message_child.phtml: That\'s correct my good sir')) ?></h3>
         <h4><?= $block->escapeHtml(__('message_child.phtml: ') . $block->getData('title')); ?></h4>

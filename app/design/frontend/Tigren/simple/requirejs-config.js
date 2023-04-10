@@ -1,9 +1,9 @@
 var config = {
 
     map: {
-//        "*": {
-//            helloworldscript: 'js/hello_world'
-//        },
+        "*": {
+            "theme/hello": 'Magento_Theme/js/hello'
+        },
     },
     deps: ["jquery","js/main"],
 
