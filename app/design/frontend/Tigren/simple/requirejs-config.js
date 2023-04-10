@@ -2,7 +2,9 @@ var config = {
 
     map: {
         "*": {
-            "theme/hello": 'Magento_Theme/js/hello'
+            "theme/hello": 'Magento_Theme/js/hello',
+            validation: "js/validation"
+
         },
     },
     deps: ["jquery","js/main"],

@@ -8,3 +8,11 @@
         <h4><?= $block->escapeHtml(__('message_child.phtml: ') . $block->getData('title')); ?></h4>
     </small>
 </div>
+<textarea
+    name="comment"
+    id="comment"
+    title="<?= $block->escapeHtmlAttr(__('Comment')) ?>"
+    class="input-text"
+    data-mage-init='{"Magento_Theme/js/validation": {"maxlen":"20","messagebox":"charNum"}}'
+></textarea>
+<span id="charNum"></span>
