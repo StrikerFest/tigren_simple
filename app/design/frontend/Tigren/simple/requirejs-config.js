@@ -23,6 +23,9 @@ var config = {
     },
     config: {
         mixins: {
+//        'mage/accordion': {
+//         'Vendor_Module/js/accordion-mixin': true
+//         }
         },
     },
 };
