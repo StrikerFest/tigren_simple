@@ -1,4 +1,10 @@
 <?php
+/*
+ * @author    Tigren Solutions <info@tigren.com>
+ * @copyright  Copyright (c)  2023.  Tigren Solutions <https://www.tigren.com>. All rights reserved.
+ * @license   Open Software License ("OSL") v. 3.0
+ */
+
 /** @var \Magento\Framework\Escaper $escaper */
 /** @var Magento\Framework\View\Element\Template $block */
 ?>
@@ -9,10 +15,10 @@
     </small>
 </div>
 <textarea
+    data-role="input-text"
     name="comment"
     id="comment"
     title="<?= $block->escapeHtmlAttr(__('Comment')) ?>"
-    class="input-text"
-    data-mage-init='{"Magento_Theme/js/validation": {"maxlen":"20","messagebox":"charNum"}}'
+    data-mage-init='{"Magento_Theme/js/validation": {"messagebox":"charNum"}}'
 ></textarea>
 <span id="charNum"></span>

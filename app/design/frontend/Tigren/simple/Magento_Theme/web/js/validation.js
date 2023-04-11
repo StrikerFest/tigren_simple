@@ -1,29 +1,31 @@
 define([
-   'jquery'
-], function ($, _) {
-   'use strict';
+    'jquery'
+], function ($) {
+    $.widget('mage.validation', {
+        options: {
+            maxlen: 100 // Override option defaults
+        },
+        _create: function () {
 
-   $.widget('mage.validation',{
+            this._case = $(this.element);
+            let maxlen = this.options.maxlen;
+            let messagebox = this.options.messagebox;
 
-       _create: function(config,element) {
+            $(this._case).keyup(function () {
 
-           this._case = $(this.element);
-           $(this._case).keyup(function () {
-               var max = 20;
-               var len = this.value.length;
-//               var len = $(this.element).val().length;
-               console.log("len1233",this.value.length);
-               if (len >= max) {
-               var char = len-max;
-                   $('#charNum').text('Limit reached! ' + char + ' characters too much');
-               } else {
-                   var char = max - len;
-                  $('#charNum').text(char + ' characters left');
-               }
-           });
-       }
-   });
+                let len = this.value.length;
+
+                if (len >= maxlen) {
+                    let char = len - maxlen;
+                    $('#' + messagebox).text('Limit reached! ' + char + ' characters too much');
+                } else {
+                    let char = maxlen - len;
+                    $('#' + messagebox).text(char + ' characters left');
+                }
+            });
+        }
+    });
 
     return $.mage.validation;
-
 });
+
